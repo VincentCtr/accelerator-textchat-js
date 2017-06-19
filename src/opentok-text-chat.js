@@ -178,7 +178,9 @@
 
     var chatholder = $(_newMessages);
     chatholder.append(view);
-    _cleanComposer();
+    if(messageSenderId === messageSenderId) {
+      _cleanComposer();
+    }
     chatholder[0].scrollTop = chatholder[0].scrollHeight;
 
   };
